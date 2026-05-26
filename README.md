@@ -1,4 +1,4 @@
-cat > ~/robot_nav_repo/README.md << 'EOF'
+
 # Webots Robot Navigation with PPO
 
 > Reinforcement learning robot navigation using PPO (Stable Baselines3) in Webots. Custom Gymnasium env with proximity sensors, shaped rewards, and continuous action space.

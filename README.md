@@ -138,7 +138,6 @@ Loads the saved model and runs the robot deterministically in the simulation.
 
 ## Notes
 
-- **World file** — the `.wbt` file is not included in the repo. Open your Webots project and copy it into `worlds/`.
 - **Model files** — `.zip` checkpoints are gitignored by default. Use [Git LFS](https://git-lfs.com/) to track them if you want to share trained weights.
 - **Out-of-bounds handling** — the episode does **not** terminate on boundary violations; the robot is teleported back so it has more time to find the goal.
 - **Physics lock** — the robot's Z position is locked at `0.0` each step to prevent physics drift in the 2D arena.

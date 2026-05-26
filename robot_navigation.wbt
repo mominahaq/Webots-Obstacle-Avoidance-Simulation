@@ -1,0 +1,78 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/KukaBox.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.5773501544172734 0.577350657303761 0.5773499958476364 2.094398997149273
+  position -2.4043765477116364e-06 -2.6742002922046617e-06 2.497590453383319
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.05 0.05
+}
+DEF ROBOT E-puck {
+  hidden position_0_0 -4517.275403402108
+  hidden position_0_1 -5113.999258041607
+  hidden linearVelocity_0 -2.4898287868470265e-06 0.0014897656041928506 8.784759399323663e-08
+  hidden angularVelocity_0 -0.01690527331599355 -2.817144316996968e-05 -0.0016919204321327224
+  hidden rotation_1 0 -1 0 5.9483528471650775
+  hidden linearVelocity_1 -2.5490609109653814e-06 0.0015298581405370493 7.888720781411604e-11
+  hidden angularVelocity_1 -0.07644315758552316 -0.00012737702402622738 -0.0016919242077728103
+  hidden rotation_2 0 1 0 0.5135820025760013
+  hidden linearVelocity_2 -2.696731527480742e-06 0.001618722125524768 -7.465112978285805e-11
+  hidden angularVelocity_2 -0.08098578432571786 -0.00013491244431623785 -0.0016919222589506548
+  translation 0.2791294456790538 -0.010663100147305742 -3.196907468464884e-05
+  rotation -0.0005705727899700598 -0.0005715233424473062 -0.9999996739038269 1.5691525120440446
+  controller "<extern>"
+  controllerArgs [
+    ""
+    ""
+    ""
+    ""
+  ]
+  supervisor TRUE
+}
+WoodenBox {
+  translation -0.25 -0.25 0
+  size 0.1 0.1 0.1
+  locked TRUE
+}
+WoodenBox {
+  translation -0.25 0.25 0
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  locked TRUE
+}
+WoodenBox {
+  translation 0.15 -0.25 0
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  locked TRUE
+}
+WoodenBox {
+  translation 0.25 0.1 0
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+  locked TRUE
+}
+DEF TARGET KukaBox {
+  translation 0.34 -0.35 0.04947025999999999
+  rotation 0.9413911780343197 -0.3137970593447692 0.12374997157870893 5.031863142827659e-17
+  color 0.7 0.9 0
+  size 0.1 0.1 0.1
+}
+DEF supervisor_controller Robot {
+  controller "<none>"
+  supervisor TRUE
+}

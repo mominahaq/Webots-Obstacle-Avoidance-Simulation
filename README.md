@@ -1,5 +1,5 @@
 cat > ~/robot_nav_repo/README.md << 'EOF'
-# 🤖 Webots Robot Navigation with PPO
+# Webots Robot Navigation with PPO
 
 > Reinforcement learning robot navigation using PPO (Stable Baselines3) in Webots. Custom Gymnasium env with proximity sensors, shaped rewards, and continuous action space.
 
@@ -7,13 +7,8 @@ An e-puck robot learns to navigate to a goal while avoiding obstacles inside a W
 
 ---
 
-## 📸 Demo
 
-> _Add a GIF or screenshot of your robot navigating here_
-
----
-
-## 🧠 How It Works
+## How It Works
 
 The robot receives a 13-dimensional observation at each timestep and outputs continuous left/right wheel velocities. A shaped reward function guides it toward the goal while penalizing collisions, spinning, and getting stuck.
 
@@ -65,7 +60,7 @@ The robot receives a 13-dimensional observation at each timestep and outputs con
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ### Prerequisites
 
@@ -103,7 +98,7 @@ Copy your `.wbt` file into the `worlds/` folder and open it in Webots before run
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Train
 
@@ -129,7 +124,7 @@ Loads the saved model and runs the robot deterministically in the simulation.
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Version |
 |---------|---------|
@@ -141,7 +136,7 @@ Loads the saved model and runs the robot deterministically in the simulation.
 
 ---
 
-## 📝 Notes
+## Notes
 
 - **World file** — the `.wbt` file is not included in the repo. Open your Webots project and copy it into `worlds/`.
 - **Model files** — `.zip` checkpoints are gitignored by default. Use [Git LFS](https://git-lfs.com/) to track them if you want to share trained weights.
@@ -150,7 +145,7 @@ Loads the saved model and runs the robot deterministically in the simulation.
 
 ---
 
-## 📄 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.
 EOF
